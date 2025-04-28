@@ -1,0 +1,43 @@
+.about-about{
+    background-color: white;
+}
+.about-head{
+    display:flex;
+      flex-direction: column;
+      align-items: center;
+      color:rgba(44,62,80,255);
+    }
+    h3{
+     color:rgba(127,140,141,255); 
+    }
+    .about-main{
+     display:grid;
+       grid-template-columns: 2fr 1fr; /* 2'ye 1 oranında iki sütun */
+      gap: 16px;
+      height:100vh;
+      
+    }
+    .about-left{
+      backgroung-color:blue;
+      height:50vh;
+    }
+    .about-left{
+      backgroung-color:green;
+      height:50vh;
+      
+    }
+    .about-yellow{
+      height:0.1em;
+      background-color:yellow;
+      width:7em;
+    }
+    .about-hours-container{
+     display:flex;
+      justify-content:space-between;
+      align-items:end;
+      border-bottom:1px dotted black;
+    }
+    .about-information{
+     display:flex;
+      align-items:start;
+    }

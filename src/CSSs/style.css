@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(70, 70, 70);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+nav{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    height: 5em;
+    justify-content: space-evenly;
+    border: none;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    align-items: center;
+}
+button{
+    background-color: transparent; /* Şəffaf fon */
+    color: white; /* Yazı ağ */
+    border: 0px solid transparent; /* Başlanğıcda border yoxdur */
+    padding: 10px 20px; /* İç boşluq */
+    text-align: center; /* Mətni ortalayır */
+    font-size: 16px; /* Yazı ölçüsü */
+    margin: 4px 2px; /* Kənar boşluqlar */
+    cursor: pointer; /* İmleç pointer olur (əl işarəsi) */
+    position: relative; /* Çünki ::after absolute olacaq */
+    transition: all 0.3s ease; /* Hamısında hamar keçid */
+}
+button:hover {
+    border-color: white; /* Hover edəndə sərhəd (border) ağ olur */
+}
+button::after {
+    content: ''; /* Mütləq yazılmalıdır */
+    position: absolute; /* Düyməyə görə mövqelənir */
+    bottom: 0; /* Aşağı hissəyə yerləşir */
+    left: 0; /* Soldan başlayır */
+    width: 100%; /* En tamdır */
+    height: 2px; /* Yüksəklik 2px-lik incə xətt */
+    background-color: white; /* Ağ rəngdə */
+    transform: scaleX(0); /* Başlanğıcda görünmür (0x ölçüdə) */
+    transform-origin: center; /* Ortadan böyüməyə başlayır */
+    transition: transform 0.3s ease-out; /* Hamar açılma effekti */
+}
+button:hover::after {
+    transform: scaleX(1); /* Hover edəndə tam enini alır və görünür */
+}

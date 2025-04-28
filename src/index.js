@@ -1,4 +1,32 @@
-import "./style.css";
+import "./CSSs/style.css";
 import {greeting} from "./greeting.js";
+import loadHome from  "./home.js";
+import loadMenu from  "./menu.js";
+import loadAbout from  "./about.js";
 
 console.log(greeting);
+
+const content = document.getElementById("content");
+const home_button = document.getElementById("home-button");
+const menu_button = document.getElementById("menu-button");
+const about_button = document.getElementById("about-button");
+
+function init() {
+    content.innerHTML = '';
+    loadAbout();
+}
+
+home_button.addEventListener('click', () => {
+    content.innerHTML = '';
+    loadHome();
+})
+menu_button.addEventListener('click', () => {
+    content.innerHTML = '';
+    loadMenu();
+})
+about_button.addEventListener('click', () => {
+    content.innerHTML = '';
+    loadAbout();
+})
+
+init();
