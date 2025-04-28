@@ -1,0 +1,43 @@
+body{
+    
+}
+#menu-main{
+    
+    background-image: url("/assets/menu0.jpg");
+    
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 200vh;
+color: white;
+margin-top: 5em;
+padding: 50px;
+align-items: center;
+
+}
+#menu-main h2{
+    padding: 20px;
+}
+#solid-stick{
+    background-color: white;
+    width: 110%;
+    height: 1px;
+}
+.name-prize{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white dotted;
+
+}
+.dotted-stick{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+}
+.food{
+    margin-top: 20px;
+}
+.gaps{
+    height: 1.5em;
+}
