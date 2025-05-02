@@ -5,7 +5,7 @@ export default function Home(){
     content.innerHTML = `<div id="main-part">
             <div id="container">
                 <h1>Welcome to Our Restaurant</h1>
-                <p>Experience the best dining experience with us.</p>
+                <p>Experience the best dining experience.</p>
             </div>
         </div>`;
 }
