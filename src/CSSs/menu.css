@@ -41,3 +41,12 @@ align-items: center;
 .gaps{
     height: 1.5em;
 }
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #menu-main{
+        font-size: 0.8em;
+    }
+    .ingredients{
+        font-size: 0.9em;
+    }
+}

@@ -13,7 +13,7 @@ const about_button = document.getElementById("about-button");
 
 function init() {
     content.innerHTML = '';
-    loadAbout();
+    loadHome();
 }
 
 home_button.addEventListener('click', () => {

@@ -14,8 +14,8 @@ body {
   background-color: rgb(255, 250, 250);
   padding: 40px;
   margin-top: 50px;
-  padding-left: 50vh;
-  padding-right: 50vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
 .about-header {
@@ -46,7 +46,6 @@ body {
 
 .about-left {
   padding: 20px;
-  background-color: #ecf0f1;
   border-radius: 8px;
 }
 
@@ -198,11 +197,10 @@ body {
     width: 25px;
     height: 25px;
   }
-  .about-left p{
-    text-align: justify;
-  }
   .about-container{
-    padding-left: 10vh;
-  padding-right: 10vh;
+    padding-left: 10px;
+  padding-right: 10px;
+  }
+  .about-container p{
   }
 }
